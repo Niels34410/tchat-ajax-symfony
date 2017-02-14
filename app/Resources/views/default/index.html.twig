@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="tchat">
+        <div id="message">
+
+        </div>
+    </div>
+    <form method="POST" action={{path('envoi')}}>
+        <input type="text" name="message" value="Votre message" />
+        <input type="submit" name="envoi" value="Envoyer" />
+    </form>
+    {% endblock %}
